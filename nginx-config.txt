@@ -1,4 +1,4 @@
-path /etc/nginx/nginx.conf
+#path: /etc/nginx/nginx.conf
 
 user www-data;
 worker_processes auto;
