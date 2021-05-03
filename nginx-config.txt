@@ -1,0 +1,15 @@
+sudo /etc/nginx/nginx.conf
+
+server {
+	listen 8000;
+	
+	location /api/drivers {
+		proxy_pass http://localhost:8001;
+	}
+	location /api/riders {
+		proxy_pass http://localhost:8001;
+	}
+	location /api/ratings {
+		proxy_pass http://localhost:8002;
+	}
+}
